@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convercion numérica</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/v4-shims.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+  <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="styles3.css">
+    <script src="codigo2.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="univerlogo.jpg" alt="Logo Univer" class="logo-img">
+        </div>
+        <h1 class="titulo-derecha">Lenguajes de programacion</h1>
+        <div class="header-right">
+            <img src="Fotocreador.jpg" alt="Fotocreador" class="user-img">
+        </div>
+    </header>
+
+    <nav class="menu-principal-barra">
+        <div class="menu-principal-links">
+            <a href="index.html" class="menu-link">Inicio</a>
+            <a href="Programas.html" class="menu-link">Programas</a>
+            <a href="Diagramas.html" class="menu-link">Diagramas</a>
+            <a href="mas.html" class="menu-link">Más</a>
+        </div>
+    </nav>
+<main class="main-content">
+    <h2>Programas de Conversión Numérica</h2>
+    <h4>Explora diferentes programas que convierten números entre sistemas binario, decimal, hexadecimal y octal.</h4>
+
+    <div class="conversion-buttons">
+  <button onclick="cargarConversion('binario_a_decimal')">Binario a Decimal</button>
+  <button onclick="cargarConversion('decimal_a_binario')">Decimal a Binario</button>
+  <button onclick="cargarConversion('Decimal_a_hexadecimal')">Decimal a Hexadecimal</button>
+  <button onclick="cargarConversion('Decimal_a_octal')">Decimal a Octal</button>
+  <button onclick="cargarConversion('Hexadecimal_a_decimal')">Hexadecimal a Decimal</button>
+  <button onclick="cargarConversion('octal_a_decimal')">Octal a Decimal</button>
+</div>
+
+<div class="code-container">
+  <button onclick="copiarCodigo()">Copiar código</button>
+  <pre><code id="codigo" class="language-python"># Aquí se mostrará el código</code></pre>
+</div>
+
+
+<section class="video-galeria">
+  <h2>Videos de Apoyo</h2>
+
+  <div class="tarjetas-videos">
+
+    <div class="tarjeta-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rltnndNILsM" frameborder="0" allowfullscreen></iframe>
+      <h3>Convertidor Decimal a Binario en Python</h3>
+      <p>Cómo programar un convertidor de números decimales a binario en Python usando operaciones matemáticas simples.</p>
+    </div>
+
+    <div class="tarjeta-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CJUtH9BmpZ0" frameborder="0" allowfullscreen></iframe>
+      <h3>Decimal a Binary Conversion In Python</h3>
+      <p>¿Te gustaría crear código que convierte de decimal a binario? ¡Inténtalo!</p>
+    </div>
+
+    <div class="tarjeta-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/aam7ACJenEA" frameborder="0" allowfullscreen></iframe>
+      <h3>Decimal a Hexadecimal Conversion</h3>
+      <p>Convertir números decimales a hexadecimal en Python explicado paso a paso.</p>
+    </div>
+
+    <div class="tarjeta-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/X3vEruDGwU0" frameborder="0" allowfullscreen></iframe>
+      <h3>Hexadecimal a Decimal Conversion</h3>
+      <p>Convierte valores hexadecimales a decimal utilizando código Python básico.</p>
+    </div>
+
+    <div class="tarjeta-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4cU3IkUnZjs" frameborder="0" allowfullscreen></iframe>
+      <h3>Decimal a Octal Conversion</h3>
+      <p>Aprende a hacer conversiones de decimal a octal usando Python.</p>
+    </div>
+
+    <div class="tarjeta-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/X9tOQB_WEpo" frameborder="0" allowfullscreen></iframe>
+      <h3>Octal a Decimal Conversion</h3>
+      <p>Convierte números octales a decimales de forma sencilla.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+    </main>
+    <footer class="footer footer-choco">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="cropped-univer_white.webp" alt="Fachada Univer" class="footer-img">
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 Proyecto 3 ViewData - Todos los derechos reservados</p>
+                <p>&copy; 2025 Universidad UNIVER</p>
+                <div class="iconos-redes">
+                    <ul>
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

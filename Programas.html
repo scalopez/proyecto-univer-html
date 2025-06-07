@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas</title>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="stylesheet" href="Styles2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/dracula.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+<script src="codigoViewer.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="univerlogo.jpg" alt="Logo Univer" class="logo-img">
+        </div>
+        <h1 class="titulo-derecha">Lenguajes de programacion</h1>
+        <div class="header-right">
+            <img src="Fotocreador.jpg" alt="Fotocreador" class="user-img">
+        </div>
+    </header>
+
+    <nav class="menu-principal-barra">
+        <div class="menu-principal-links">
+            <a href="index.html" class="menu-link">Inicio</a>
+            <a href="Convercionnumerica.html" class="menu-link">Conversión numérica</a>
+            <a href="Diagramas.html" class="menu-link">Diagramas</a>
+            <a href="mas.html" class="menu-link">Más</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="portada-diagramas">
+        <div class="portada-svg-bg">
+            <img src="Fondo diagramas.png" alt="Fondo de diagramas" class="portada-bg-img">
+        </div>
+        <div class="portada-diagramas-texto">
+            <h2>Recursos</h2>
+            <h4>Explora diferentes recursos relacionados con la programación y la conversión numérica.</h4>
+        </div>
+    </section>
+  <h2>Visualizador de Códigos Python</h2>
+<div class="selector-contenedor">
+  <label for="carpeta">Categoría:</label>
+  <select id="carpeta" onchange="cargarArchivos()">
+    <option value="">Selecciona una categoría</option>
+    <option value="Aritmeticas">Aritméticas</option>
+    <option value="Calculadora Geométrica">Geometría</option>
+    <option value="Converciones">Conversiones</option>
+    <option value="Logicos">Lógicos</option>
+    <option value="Relacionales">Relacionales</option>
+  </select>
+
+  <label for="archivo">Archivo:</label>
+  <select id="archivo" onchange="mostrarCodigo()">
+    <option value="">Selecciona un archivo</option>
+  </select>
+</div>
+  <div class="code-container">
+    <button class="copy-btn" onclick="copiarCodigo()">Copiar</button>
+    <pre><code id="codigo" class="language-python"></code></pre>
+  </div>
+</main>
+
+
+    <footer class="footer footer-choco">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="cropped-univer_white.webp" alt="Fachada Univer" class="footer-img">
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 Proyecto 3 ViewData - Todos los derechos reservados</p>
+                <p>&copy; 2025 Universidad UNIVER</p>
+                <div class="iconos-redes">
+                    <ul>
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="codigoViewer.js"></script>
+</body>
+</html>
